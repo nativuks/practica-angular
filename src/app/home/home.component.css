@@ -1,0 +1,6 @@
+.banner{
+    height: 400px;
+    width: 100%;
+    background-image: url('../../assets/imgs/route-66.jpg') !important;
+    background:cadetblue;
+}
