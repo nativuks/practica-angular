@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MATERIAL_COMPATIBILITY_MODE,
   MatButtonModule,
@@ -8,6 +9,9 @@ import {
   MatToolbarModule,
   MatCheckboxModule,
   MatInputModule,
+  MatDialogModule,
+  MatFormFieldModule,
+  
 } from '@angular/material';
 
 @NgModule({
@@ -19,7 +23,10 @@ import {
     MatToolbarModule,
     MatCheckboxModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    BrowserAnimationsModule
   ],
   exports: [
     MatButtonModule,
@@ -28,6 +35,7 @@ import {
     MatToolbarModule,
     MatCheckboxModule,
     MatInputModule,
+    BrowserAnimationsModule
   ],
   providers: [
     { provide: MATERIAL_COMPATIBILITY_MODE, useValue: true }

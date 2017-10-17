@@ -5,6 +5,7 @@ import { MaterialModule } from './material/material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeModule } from './home/home.module';
 import { FooterModule } from './footer/footer.module';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FooterModule } from './footer/footer.module';
     AppRoutingModule,
     MaterialModule,
     HomeModule,
-    FooterModule
+    FooterModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
