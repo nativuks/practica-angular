@@ -19,9 +19,6 @@ export class HomeComponent implements OnInit {
 
   openLoginDialog(  ): void {
     this.setupdDialog();
-    /* dialogRef.afterClosed().subscribe( result => {
-      this.some = result;
-    }) */
   }
   setupdDialog(  width = '400px', height = '350px'): void {
     this.preview.open(LoginComponent , {
