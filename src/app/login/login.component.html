@@ -1,25 +1,23 @@
 <div class="dialog">
     <mat-dialog-content >
-        
-        <mat-grid-list cols="1" rowHeight="50px">
-    
-          <mat-grid-tile>
+            <div>
               <mat-form-field class="example-full-width">
-                  <input matInput placeholder="Username">
-                </mat-form-field>
-          </mat-grid-tile>
-          <mat-grid-tile>   
+                <input [value]="username" (input)="username = $event.target.value"  matInput placeholder="Username">
+            </mat-form-field>
+            </div>
+
+            <div>
               <mat-form-field class="example-full-width">
-                  <input matInput placeholder="Password">
-                </mat-form-field>
-          </mat-grid-tile>
-        </mat-grid-list>
+                <input [value]="password" (input)="password = $event.target.value"  matInput placeholder="Password" >
+              </mat-form-field>
+            </div>
+              
       </mat-dialog-content>
       <mat-dialog-actions>
         <div >
-          <button mat-raised-button (click)="onCloseDialog()"  >Close</button>
-          <button mat-raised-button (click)="onCloseDialog()"  >Login</button>
+          <button mat-raised-button (click)="onCloseDialog()">Close</button>
+          <button mat-raised-button (click)="onLoginClick(username,password)"  >Login</button>
         </div>
-        
       </mat-dialog-actions>
+      <div>{{ messageLogin }}</div>
 </div>
