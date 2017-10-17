@@ -32,8 +32,6 @@ export class LoginComponent implements OnInit {
       }else {
          this.messageLogin = 'Username o password invalido';
       }
-     // this.onCloseDialog();
-     // this.router.navigate(['/dashboard']);
   }
   onCloseDialog(): void {
    this.dialogRef.close();
